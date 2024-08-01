@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06, #4a90e2); /* Keeping the existing background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s ease;
+    border: 2px solid black; /* Added black border */
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4a90e2;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.success-message {
+    text-align: center;
+    background-color: #d4edda;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    color: #155724;
+    transition: transform 0.3s ease;
+}
+
+.success-message:hover {
+    transform: scale(1.05);
+}
+
+.success-message h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .form-container, .success-message {
+        width: 90%;
+    }
+}
